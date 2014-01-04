@@ -18,3 +18,27 @@ Notes:
 
 
 
+
+--------------------------
+DFA (Deterministic Finite Automaton)
+--------------------------
+-Models DFAs
+
+-current example recognizes .edu URLs, as noted in .jpg file
+
+
+
+
+--------------------------
+PDA (Pushdown Automaton)
+--------------------------
+-Models PDAs
+
+-current example recognizes basic arithmetic expressions
+
+
+
+
+--------------------------
+
+--------------------------
