@@ -1,1 +1,1 @@
-Collection of some coding projects
+Each folder should have its own README.txt
