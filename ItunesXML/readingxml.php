@@ -1,7 +1,19 @@
 <?php
 
 function cmp($a,$b) {
-	return strcasecmp($a['artist'],$b['artist']);
+	$rval = strcasecmp($a['artist'],$b['artist']);
+	
+	if ($rval != 0) {
+		return $rval;
+	} else {
+		$rval = strcasecmp($a['album'],$b['album']);
+		if ($rval != 0){
+			return $rval;
+		} else {
+			return strcasecmp($a['name'],$b['name']);
+		}
+		
+	}
 }
 
 function a2t($songs) {
@@ -25,17 +37,10 @@ function a2t($songs) {
 	return $test;
 }
 
-function printNames($songs) {
-	foreach ($songs as $song) {
-		echo $song['name']."\n";
-	}
-}
-
 
 $xml=simplexml_load_file("NewLibrary.xml");
 
 
-$i = 0;
 $songs = array();
 $p4 = array();
 $p3 = array();
